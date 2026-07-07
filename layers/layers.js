@@ -3,6 +3,7 @@ var wms_layers = [];
 
         var lyr_argenmap_0 = new ol.layer.Tile({
             'title': 'argenmap',
+            'type':'base',
             'opacity': 1.000000,
             
             
@@ -70,7 +71,7 @@ lyr_argenmap_0.setVisible(true);lyr_com_Ind_red_1.setVisible(true);
 var layersList = [lyr_argenmap_0,lyr_com_Ind_red_1];
 lyr_com_Ind_red_1.set('fieldAliases', {'Id': 'Id', 'Nombre_com': 'Nombre_com', 'Pueblo': 'Pueblo', 'Provincia': 'Provincia', 'Departamen': 'Departamen', 'Situación': 'Situación', 'Estado_Ins': 'Estado_Ins', 'Pueblo_ref': 'Pueblo_ref', });
 lyr_com_Ind_red_1.set('fieldImages', {'Id': 'TextEdit', 'Nombre_com': 'TextEdit', 'Pueblo': 'TextEdit', 'Provincia': 'TextEdit', 'Departamen': 'TextEdit', 'Situación': 'TextEdit', 'Estado_Ins': 'TextEdit', 'Pueblo_ref': 'TextEdit', });
-lyr_com_Ind_red_1.set('fieldLabels', {'Id': 'no label', 'Nombre_com': 'no label', 'Pueblo': 'no label', 'Provincia': 'no label', 'Departamen': 'no label', 'Situación': 'no label', 'Estado_Ins': 'no label', 'Pueblo_ref': 'no label', });
+lyr_com_Ind_red_1.set('fieldLabels', {'Id': 'inline label - visible with data', 'Nombre_com': 'no label', 'Pueblo': 'no label', 'Provincia': 'no label', 'Departamen': 'no label', 'Situación': 'no label', 'Estado_Ins': 'no label', 'Pueblo_ref': 'no label', });
 lyr_com_Ind_red_1.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
