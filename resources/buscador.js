@@ -49,17 +49,16 @@ buscador.addEventListener("input", function(){
 
 	var encontrados = features_ComunidadesIndgenas_2.filter(function(feature){
 
-    var nombre = feature.get("Nombre_com");
-    var id = feature.get("Id");
+   	var nombre = feature.get("Nombre_com");
+	var id = feature.get("Id");
 
-    var coincideNombre = nombre &&
-        nombre.toLowerCase().includes(texto);
+	var coincideNombre = nombre &&
+    nombre.toLowerCase().includes(texto);
 
-    var coincideId = id &&
-        id.toLowerCase().includes(texto);
+	var coincideId = id &&
+    id.toLowerCase().includes(texto);
 
-
-    return coincideNombre || coincideId;
+	return coincideNombre || coincideId;
 
 }).slice(0,10);
 
